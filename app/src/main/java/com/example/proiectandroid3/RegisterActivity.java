@@ -120,11 +120,11 @@ public class RegisterActivity extends AppCompatActivity {
 
 
                 } else {
-                    username.setError("Exista un cont cu acest username.");
-                    Toast.makeText(this, "Numele de utilizator a fost luat deja.", Toast.LENGTH_SHORT).show();
+                    username.setError("Exista un cont cu acest username!");
+                    Toast.makeText(this, "Numele de utilizator a fost luat deja!", Toast.LENGTH_SHORT).show();
                 }
             } else {
-                email.setError("Exista un cont cu acest email.");
+                email.setError("Exista un cont cu acest email!");
 
 
 
@@ -133,7 +133,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         } else {
             password.requestFocus();
-            password.setError("Parolele nu sunt identice.");
+            password.setError("Parolele nu sunt identice!");
             password2.requestFocus();
 
         }
