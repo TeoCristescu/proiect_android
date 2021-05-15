@@ -86,23 +86,23 @@ public class RegisterActivity extends AppCompatActivity {
 
         if (username.getText().toString().equals("")) {
             username.requestFocus();
-            username.setError("Câmp obligatoriu");
+            username.setError("Câmp obligatoriu!");
             return;
         }
 
         if (password.getText().toString().equals("")) {
             password.requestFocus();
-            password.setError("Câmp obligatoriu");
+            password.setError("Câmp obligatoriu!");
             return;
         }
         if (password2.getText().toString().equals("")) {
             password2.requestFocus();
-            password2.setError("Câmp obligatoriu");
+            password2.setError("Câmp obligatoriu!");
             return;
         }
         if (email.getText().toString().equals("")) {
             email.requestFocus();
-            email.setError("Câmp obligatoriu");
+            email.setError("Câmp obligatoriu!");
             return;
         }
 
