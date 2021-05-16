@@ -7,6 +7,25 @@
     android:layout_height="match_parent">
 
     <Button
+        android:id="@+id/register5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:onClick="go_to_cursuri"
+        android:padding="16dp"
+        android:text="Cursuri"
+        android:textColor="#d9e5f3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251" />
+
+    <Button
         android:id="@+id/register4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,9 +51,9 @@
         android:layout_gravity="top"
         android:gravity="center"
         android:letterSpacing="0.2"
-        android:onClick="go_to_cursuri"
+        android:onClick="go_to_statistici"
         android:padding="16dp"
-        android:text="Cursuri"
+        android:text="Statistici"
         android:textColor="#d9e5f3"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +61,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.251" />
+        app:layout_constraintVertical_bias="0.387" />
 
     <Button
         android:id="@+id/register2"

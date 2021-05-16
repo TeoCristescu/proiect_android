@@ -33,6 +33,10 @@ public class DupaLogin extends AppCompatActivity {
         Intent it = new Intent(this, Maps.class);
         startActivity(it);
     }
+    public void go_to_statistici(View view) {
+        Intent it = new Intent(this, Statistici.class);
+        startActivity(it);
+    }
     public void go_to_logout(View view) {
         SharedPreferences preferences = getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE);
         preferences.edit().remove("utilizator").commit();
