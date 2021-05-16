@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private String TAG = MainActivity.class.getSimpleName();
     private ListView lv;
     List<Curs> cursuri = new ArrayList<Curs>();
-    ArrayList<HashMap<String, String>> contactList;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
