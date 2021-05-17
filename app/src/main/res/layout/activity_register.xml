@@ -31,7 +31,7 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <!-- camp pentru username -->
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/usernameCV"
                 android:layout_width="350dp"
@@ -109,7 +109,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-            <!-- camp pentru repetare parola -->
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/parola2CV"
                 android:layout_width="350dp"
@@ -151,7 +151,7 @@
             </androidx.cardview.widget.CardView>
 
 
-            <!-- camp pentru prenume -->
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/emailCV"
                 android:layout_width="350dp"
@@ -192,7 +192,7 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- camp pentru calendarview -->
+
 
             <androidx.cardview.widget.CardView
                 android:layout_width="350dp"

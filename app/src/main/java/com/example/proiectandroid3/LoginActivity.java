@@ -34,7 +34,7 @@ public class LoginActivity extends  AppCompatActivity{
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1)
             if (resultCode == RESULT_OK) {
-                Toast.makeText(this, "Am adaugat utilizatorul cu succes", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Am adaugat utilizatorul cu succes!", Toast.LENGTH_SHORT).show();
             }
     }
     public void login(View view) {
@@ -46,7 +46,7 @@ public class LoginActivity extends  AppCompatActivity{
         List<UserEntity> usersList = RegisterActivity.database.userDao().checkUsername(numeutilizator);
         if (usersList.size() == 0) {
             username.requestFocus();
-            username.setError("Utilizatorul nu a fost gasit");
+            username.setError("Utilizatorul nu a fost gasit!");
         } else {
 
             if (user != null) {
@@ -58,7 +58,7 @@ public class LoginActivity extends  AppCompatActivity{
                 startActivity( new Intent(LoginActivity.this, DupaLogin.class));
 
             } else {
-                Toast.makeText(this, "Credentiale gresite", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Nume sau parola gresita!", Toast.LENGTH_SHORT).show();
             }
         }
     }

@@ -113,15 +113,15 @@ public class RegisterActivity extends AppCompatActivity {
                 if (usersList1.isEmpty()) {
                     UserEntity user = new UserEntity(username_s, password_s, email_s, zi, luna, an);
                     database.userDao().insert(user);
-                    Toast.makeText(this, "am adaugat", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Utilizator adaugat cu succes!", Toast.LENGTH_SHORT).show();
                     Intent it = new Intent(this, LoginActivity.class);
                     startActivity(it);
                     finish();
 
 
                 } else {
-                    username.setError("Exista un cont cu acest username!");
-                    Toast.makeText(this, "Numele de utilizator a fost luat deja!", Toast.LENGTH_SHORT).show();
+                    username.setError("Exista deja un cont cu acest username!");
+                    Toast.makeText(this, "Numele de utilizator este deja folosit!", Toast.LENGTH_SHORT).show();
                 }
             } else {
                 email.setError("Exista un cont cu acest email!");

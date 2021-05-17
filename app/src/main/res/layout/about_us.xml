@@ -23,18 +23,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.0" />
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="374dp"
 
         android:layout_height="62dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginBottom="108dp"
         android:layout_weight="9"
         android:gravity="center"
         android:text=" Bulevardul George Coșbuc 39-49"
         app:layout_constraintBottom_toTopOf="@+id/googleMap"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -58,6 +59,7 @@
         android:layout_height="480dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />

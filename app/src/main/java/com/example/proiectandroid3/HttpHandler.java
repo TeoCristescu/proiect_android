@@ -18,7 +18,6 @@ public class HttpHandler {
 
     public HttpHandler() {
     }
-
     public String makeServiceCall(String reqUrl) {
         String response = null;
         try {
@@ -58,7 +57,6 @@ public class HttpHandler {
                 e.printStackTrace();
             }
         }
-
         return sb.toString();
     }
 }

@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String TAG = MainActivity.class.getSimpleName();
     private ListView lv;
+
     List<Curs> cursuri = new ArrayList<Curs>();
 
 
@@ -35,15 +36,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         lv = (ListView) findViewById(R.id.list);
-
-
-        new GetContacts().execute();
+        new GetData().execute();
     }
 
-    private class GetContacts extends AsyncTask<Void, Void, Void> {
+    private class GetData extends AsyncTask<Void, Void, Void> {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();

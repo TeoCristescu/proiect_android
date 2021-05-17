@@ -18,6 +18,7 @@ public class DupaLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dupalogin);
+
         SharedPreferences sharedPreferences = this.getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE);
         String text = sharedPreferences.getString("utilizator", "");
         Toast.makeText(this, "Bine ai venit "+text + " !", Toast.LENGTH_SHORT).show();

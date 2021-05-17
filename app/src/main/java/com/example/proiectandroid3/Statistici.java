@@ -11,5 +11,4 @@ public class Statistici extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(new DesenPieChart(this));
     }
-
 }

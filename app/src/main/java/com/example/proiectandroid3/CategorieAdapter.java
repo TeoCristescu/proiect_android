@@ -42,17 +42,13 @@ public class CategorieAdapter extends BaseAdapter { List<Curs> list = new ArrayL
         View v = li.inflate(R.layout.afisare_categorii,parent,false);
         Curs u = (Curs) getItem(position);
 
-
-
         TextView tvNume;
         tvNume=v.findViewById(R.id.nume_categorie);
         tvNume.setText(u.getNume_curs());
 
         ImageView img;
         img= v.findViewById(R.id.imagine_categorie);
-
         img.setImageResource(u.getImagine_curs());
-
         return v;
     }
 }

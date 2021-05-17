@@ -37,6 +37,7 @@ public class Maps extends FragmentActivity implements OnMapReadyCallback  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(new DesenPieChart(this));
         setContentView(R.layout.about_us);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
