@@ -12,11 +12,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
-public class CategorieAdapter extends BaseAdapter { List<Curs> list = new ArrayList<Curs>();
+public class CursAdapter extends BaseAdapter { List<Curs> list = new ArrayList<Curs>();
     private LayoutInflater li=null;
     private Context context;
 
-    public CategorieAdapter(List<Curs> list, Context context) {
+    public CursAdapter(List<Curs> list, Context context) {
         this.list = list;
         this.context = context;
     }
