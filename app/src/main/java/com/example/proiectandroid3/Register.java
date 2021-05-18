@@ -19,7 +19,7 @@ import android.widget.Toast;
 import java.util.Calendar;
 import java.util.List;
 
-public class RegisterActivity extends AppCompatActivity {
+public class Register extends AppCompatActivity {
 
     private EditText username, password, password2, email;
     private TextView data;
@@ -55,7 +55,7 @@ public class RegisterActivity extends AppCompatActivity {
                 int day = an;
 
                 DatePickerDialog dialog = new DatePickerDialog(
-                        RegisterActivity.this,
+                        Register.this,
                         android.R.style.Theme_Holo_Light_Dialog_MinWidth,
                         DataSetListener,
                         year, month, day
@@ -114,7 +114,7 @@ public class RegisterActivity extends AppCompatActivity {
                     UserEntity user = new UserEntity(username_s, password_s, email_s, zi, luna, an);
                     database.userDao().insert(user);
                     Toast.makeText(this, "Utilizator adaugat cu succes!", Toast.LENGTH_SHORT).show();
-                    Intent it = new Intent(this, LoginActivity.class);
+                    Intent it = new Intent(this, Login.class);
                     startActivity(it);
                     finish();
 
@@ -140,7 +140,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public void sendToLogin(View view) {
-        Intent it = new Intent(this, LoginActivity.class);
+        Intent it = new Intent(this, Login.class);
         startActivity(it);
         finish();
     }

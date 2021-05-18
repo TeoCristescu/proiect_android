@@ -5,13 +5,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
-
-import java.util.Map;
 
 public class DupaLogin extends AppCompatActivity {
     @Override
@@ -41,7 +37,7 @@ public class DupaLogin extends AppCompatActivity {
     public void go_to_logout(View view) {
         SharedPreferences preferences = getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE);
         preferences.edit().remove("utilizator").commit();
-        Intent it = new Intent(this, LoginActivity.class);
+        Intent it = new Intent(this, Login.class);
         startActivity(it);
     }
 }

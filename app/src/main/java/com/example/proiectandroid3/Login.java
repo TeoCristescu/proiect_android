@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.List;
-public class LoginActivity extends  AppCompatActivity{
+public class Login extends  AppCompatActivity{
     public static final String SHARED_PREFS = "sharedPrefs";
     public static final String TEXT = "utilizator";
     private EditText username, password;
@@ -19,13 +19,13 @@ public class LoginActivity extends  AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        RegisterActivity.database = Room.databaseBuilder(this, UserDataBase.class, "app-database").allowMainThreadQueries().build();
+        Register.database = Room.databaseBuilder(this, UserDataBase.class, "app-database").allowMainThreadQueries().build();
         username = findViewById(R.id.username);
         password = findViewById(R.id.parola);
     }
 
     public void sendToRegister(View view) {
-        Intent it = new Intent(this, RegisterActivity.class);
+        Intent it = new Intent(this, Register.class);
         startActivityForResult(it, 1);
     }
 
@@ -41,9 +41,9 @@ public class LoginActivity extends  AppCompatActivity{
         String numeutilizator = username.getText().toString();
         String parola = password.getText().toString();
 
-        UserEntity user = RegisterActivity.database.userDao().searchForUser(numeutilizator, parola);
+        UserEntity user = Register.database.userDao().searchForUser(numeutilizator, parola);
 
-        List<UserEntity> usersList = RegisterActivity.database.userDao().checkUsername(numeutilizator);
+        List<UserEntity> usersList = Register.database.userDao().checkUsername(numeutilizator);
         if (usersList.size() == 0) {
             username.requestFocus();
             username.setError("Utilizatorul nu a fost gasit!");
@@ -55,7 +55,7 @@ public class LoginActivity extends  AppCompatActivity{
                 String x = username.getText().toString();
                 editor.putString(TEXT, x);
                 editor.apply();
-                startActivity( new Intent(LoginActivity.this, DupaLogin.class));
+                startActivity( new Intent(Login.this, DupaLogin.class));
 
             } else {
                 Toast.makeText(this, "Nume sau parola gresita!", Toast.LENGTH_SHORT).show();

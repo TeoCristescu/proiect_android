@@ -26,7 +26,7 @@ public class DesenPieChart extends View {
 
             paint2.setColor(Color.BLACK);
             paint2.setTextSize(50);
-            canvas.drawText("Masini virtuale vs containere 60%-40%", 20, 50, paint2);
+            canvas.drawText("Masini virtuale vs containere 60%-40% ", 20, 50, paint2);
 
             canvas.drawArc(
                     100,

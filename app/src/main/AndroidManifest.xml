@@ -24,11 +24,11 @@
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
-        <activity android:name=".LoginActivity"/>
+        <activity android:name=".Login"/>
         <activity android:name=".PaginaCurs"/>
         <activity android:name=".DupaLogin"/>
         <activity android:name=".Statistici"/>
-        <activity android:name=".RegisterActivity">
+        <activity android:name=".Register">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
